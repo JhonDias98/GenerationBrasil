@@ -1,0 +1,91 @@
+<!-- shift+alt+f, indenta altomatico, ou F1 e digitar reindent lines  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Ex4</title>
+    <!-- colocando um ícone na aba de título -->
+    <link rel="icon" href="assets/imagens/arvore.jpg">
+    <style>
+        /* css interno */
+        /* organizar os seletores dos mais amplos para os mais específicos, class --> id */
+        
+        * {
+            box-sizing: border-box; /* para compensar o padding*/
+            /*resetar margin e padding*/
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: darkred; /* cor do fundo*/
+            width: 600px; /* largura*/
+            height: 100px; /*altura*/
+        }
+        
+        nav {
+            background-color: dodgerblue;
+            width: 600px;
+            height: 80px;
+        }
+
+        main {
+            background-color: darkslategrey;
+            width: 600px;
+            height: 420px;
+        }
+        article {
+            background-color: deeppink;
+            width: 400px;
+            height: 420px;
+            float: left;
+        }
+
+        section {
+            background-color: gold;
+            width: 350px;
+            height: 200px;   
+            margin-left: 25px;    
+        }
+
+        aside {
+            background-color: indigo;
+            width: 200px;
+            height: 420px;
+            float: left;
+        }
+
+        footer {
+            background-color: lightcoral;
+            width: 600px;
+            height: 100px;    
+            padding-top: 10px;
+            padding-left: 5px;        
+        }
+
+        #caixa {
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- estruturas semânticas -->
+    <div id="caixa">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>
+            <article>
+                <section style="margin-top: 10px;">Section dentro do article</section>
+                <section>Section dentro do article</section>
+            </article>
+            <aside>Aside</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

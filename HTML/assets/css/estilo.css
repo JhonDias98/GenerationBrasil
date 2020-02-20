@@ -1,0 +1,45 @@
+/* comentário  */
+
+/*
+sintaxa:
+elemento { propriedade: valor;
+    propriedade: valor}
+    */
+
+/* seletor de elemento */
+h1 {
+    color: darkred;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Odibee Sans', cursive;
+}
+/* seletor de id */
+#paragrafo1 {
+    color: darkviolet;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+#paragrafo2 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: green;
+    font-family: cursive;
+    text-align: center;
+    background-color: khaki;
+}
+
+.grupo1 {
+    color: mediumblue;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.grupo2 {
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
