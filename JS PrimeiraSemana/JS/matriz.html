@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var a=[]; b=[]; soma=[];
+
+    for(var i=0; i<=1; i++){
+        for(var j=0; j<=1; j++){
+            a[i,j]= parseInt(prompt("Digite o valor A:"));
+            document.write("valor de A: " + a[i,j] + "---<br>");
+        }
+    }
+    
+    for(var i=0; i<=1; i++){
+        for(var j=0; j<=1; j++){
+            b[i,j]= parseInt(prompt("Digite o valor B:"));
+            document.write("valor de B: " + b[i,j] + "---<br>");
+        }
+    }
+
+    for(var i=0; i<=1; i++){
+        for(var j=0; j<=1; j++){
+            soma[i,j] = (a[i,j] + b[i,j]);
+            document.write("a soma foi: " + soma [i,j] + "---<br>" + "<br>");
+        }
+    }
+</script>
