@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var cont=1, totalSal=parseFloat(0);
+
+    while(cont<=5){
+
+        var salario = parseFloat(prompt("Informe o seu salário"));
+        // variavel "+=" repete a variavel 
+        totalSal+= salario;
+        cont++;
+    }
+    if(cont > 0 && cont != 1) {
+        var media = parseFloat(totalSal/5);
+        document.write("A média dos salários foi: " + media);
+    }    
+    else {
+        alert("Impossível dividir por zero");
+    }
+
+</script>

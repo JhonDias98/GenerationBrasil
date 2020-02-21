@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var nome = prompt("Digite seu nome: ");
+
+    var salario = parseFloat(prompt("Digite seu salário: "));
+
+    if(salario >= 5000)
+    {
+        var aumento = salario + (salario * 0.05);
+        //aumento = salario + (salario*5/100)
+    }
+    else
+    {
+        var aumento = salario + (salario * 0.1);
+        //aumento = salario + (salario*10/100)
+    }
+
+    alert(nome + " seu salário era: " + salario + "\nSeu salário com aumento ficou: " + aumento);
+
+</script>

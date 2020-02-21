@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var calculo, n1, n2, escolha;
+
+    escolha = parseInt(prompt("O que deseja:\n Adição[1]\nSubtracão[2]\nMultiplicação[3]\nDivisão[4]"));
+    n1 = parseInt(prompt("Digite o primeiro valor: "));
+    n2 = parseInt(prompt("Digite o segundo valor: "));
+
+    if(escolha == 1){
+        calculo = n1 + n2;
+    }
+    else 
+    
+    if (escolha == 2) {
+        calculo = n1 - n2;
+    }
+    else
+
+    if (escolha == 3) {
+        calculo = n1 * n2;
+    }
+    else{
+        calculo =(n1 / n2).toFixed(2);
+    }
+    alert(`O resultado do calculo foi: ${calculo}`);
+
+</script>

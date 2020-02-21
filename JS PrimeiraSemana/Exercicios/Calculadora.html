@@ -1,0 +1,145 @@
+<meta charset="UTF-8">
+<script>
+    function verificadorn1(n1){
+        if(typeof(n1) != "Int")
+    }
+    var tipo = parseInt(prompt("==============================\nDigite numero do que você quer calcular:\n1 - soma\n2 - substração\n3- multiplicação\n4 - divisão\n5 - mmc\n6 - mdc\n7 - conversão de inteiro decimal para binario\n8 - conversão de binario para inteiro decimal\n9 - conversão de inteiro decimal para hexadecimal\n=============================="));
+    if(tipo != 1 && tipo != 2 && tipo != 3 && tipo != 4 && tipo != 5 && tipo != 6 && tipo != 7 && tipo != 8 && tipo != 9){
+        alert("Insira um valor válido");
+    }
+    else{
+        if(tipo == 1){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            alert("O resultado é "+ (n1+n2));
+        }
+        if(tipo == 2){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            alert("O resultado é "+ (n1-n2));
+        }
+        if(tipo == 3){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            if(n2 == 0){
+                alert("Não pode dividir por 0")
+            }
+            else{
+                alert("O resultado é "+ (n1*n2));
+            }
+            
+        }
+        if(tipo == 4){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            if(n2 == 0){
+                alert("Não pode dividir por 0")
+            }
+            else{
+                alert("O resultado é "+ (n1/n2).toFixed(2));
+            }
+        }
+        if(tipo == 5){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            if(n2>n1){
+                var maior = n2;
+            }
+            else{
+                var maior = n1;
+            }
+            var mmc = 1;
+            for(var i = 2; i<maior; i++){
+                if(n2 % i == 0 && n2 % i == 0){
+                    mmc = i;
+                    break
+                }
+            }
+            alert("O resultado é "+ mmc);
+        }
+        if(tipo == 6){
+            var n1 = parseFloat(prompt("Insira o primeiro número"));
+            var n2 = parseFloat(prompt("Insira o segundo número"));
+            var resto;
+            while(resto != 0){
+                resto = n1%n2
+                n1 = n2
+                n2 = resto
+            }
+            alert("O resultado é "+ n1)
+        }
+        if(tipo == 7){
+            var n1 = parseInt(prompt("Insira o numero que você quer converter"));
+            var binario = [];
+            while(n1>1){
+                var resto = n1%2;
+                binario.unshift(resto);
+                n1 = parseInt(n1/2);
+            }           
+            binario.unshift(n1);
+            var resultado = "";
+            for(var i =0; i < binario.length; i++){
+                resultado = resultado + binario[i];
+            }
+            alert("O resultado é "+ resultado);
+        }
+        if(tipo == 8){
+            var n1 =  prompt("Insira o numero que você quer converter");
+            var resultado = 0, resto
+            var tamanho = n1.length
+            for(var i = 0;i < tamanho;i++){
+                resto = n1%10
+                n1 = parseInt(n1/10)         
+                if(resto == 1){
+                    resultado += parseInt(Math.pow(2,i))
+                }
+                if(i == tamanho - 1){
+                    alert("O resultado é "+ resultado); 
+                }     
+            }
+        }
+        if(tipo == 9){
+            var n1 = parseInt(prompt("Insira o numero que você quer converter"));
+            var hexa = [];
+            while(n1>1){
+                var resto = n1%16;
+                if(resto >= 10){
+                    if(resto == 10){
+                        resto = "A"
+                    }
+                    if(resto == 11){
+                        resto = "B"
+                    }
+                    if(resto == 12){
+                        resto = "C"
+                    }
+                    if(resto == 13){
+                        resto = "D"
+                    }
+                    if(resto == 14){
+                        resto = "E"
+                    }
+                    if(resto == 15){
+                        resto = "F"
+                    }
+                }
+                hexa.unshift(resto);
+                n1 = parseInt(n1/16);
+            }
+            if(n1 != 0){
+                hexa.unshift(n1);
+            }
+            var resultado = "";
+            for(var i =0; i < hexa.length; i++){
+                resultado = resultado + hexa[i];
+            }
+            alert("O resultado é "+ resultado);
+        }
+        if(tipo == 10){
+            //esperando gabriel
+        }           
+    }      
+    
+    
+    
+</script>

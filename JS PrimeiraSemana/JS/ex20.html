@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var numeros = [],inverte = [];
+
+    for (var posicao = 0; posicao < 5; posicao++) {
+        numeros[posicao]= prompt("Informe o número: ");
+        document.write(numeros[posicao]+ " - ");
+        
+    }
+    // 1 2 3 4 5
+    // 0 1 2 3 4
+    var posicao2 = 0;
+    var posicao = 4;
+    while(posicao2 < 5){
+        inverte[posicao2] = numeros[posicao];
+        document.write(inverte[posicao2]+ " - ");
+        posicao2 ++;
+        posicao--;
+    }
+
+    /* Usando somente o while
+    var numeros = [];
+    var = i=0;
+
+    while(i<=4) ou (i<5){
+        numeros[i] = prompt("Digite: ");
+        document.write(numeros[i]);
+        i++;
+    }
+    //Inverso
+    i=4
+    while(i>=){
+        document.write(numeros[i]);
+        i--;
+
+    }
+    */
+
+</script>

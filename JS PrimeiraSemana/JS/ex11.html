@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var codigo = prompt("Qual o seu código de empregado?");
+
+    var nascimento = parseInt(prompt("Em qual ano você nasceu?"));
+    
+    var anoIngresso = parseInt(prompt("Em que ano você ingressou na empresa?"));
+    
+    var idade = 2020 - nascimento;
+    var tempoTrabalho = 2020 - anoIngresso;
+
+    if(idade >= 65 || tempoTrabalho >= 30)
+    {
+        alert("O funcionário: " + codigo + " pode requerer a aposentadoria");
+    }
+    else
+    {
+        if(idade >= 60 && tempoTrabalho >= 25){
+            alert("O funcionário: " + codigo + " pode requerer a aposentadoria");
+        }
+        else
+        {
+            alert("O funcionário: " + codigo + " não pode requerer a aposentadoria");
+        }
+    }
+
+</script>

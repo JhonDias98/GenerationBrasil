@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var nome = prompt("Digite o seu nome: ");
+    var n1 = parseInt(prompt("Digite a 1° nota: "));
+    var n2 = parseInt(prompt("Digite a 2° nota: "));
+    var n3 = parseInt(prompt("Digite a 3° nota: "));
+    
+
+    // Processamento
+    var media = ((n1 + n2 + n3) / 3).toFixed(2);
+
+    if(media >= 7){
+        var resultado = " Aprovado";
+    }
+    else{
+        var resultado = " Reprovado";
+    }
+    console.log(nome + " sua média foi: " + media + resultado);
+    alert(nome + " sua média foi: " + media + resultado);
+
+</script>
