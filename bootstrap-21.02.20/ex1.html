@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Ex1</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- fim do bootstrap -->
+
+    <!-- meu css -->
+    <style>
+        .card-text {
+            text-align: justify;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-color: cornflowerblue;
+        }
+
+        .nav-link {
+            color: floralwhite;
+        }
+
+        /* media queries */
+        @media (min-width: 500px) {
+            .carousel {width: 50%;}
+        }
+    </style>
+    <!-- fim do css -->
+
+</head>
+
+<body>
+    <!-- container fluid -->
+    <main class="container clearfix">
+        <!-- Menu centralizado -->
+        <ul style="background-color: lightslategray;" class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+
+        <!-- Carrosel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="100">
+                    <img style="height: 400px;" src="assets/img/N1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="100">
+                    <img style="height: 400px;" src="assets/img/N2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="100">
+                    <img style="height: 400px;" src="assets/img/N3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br><br>
+        <hr>
+
+
+        <!-- cartão -->
+        <div class="card" style="width: 20rem; float: right;">
+            <img src="assets/img/GenerationBrasil.png" class="card-img-top" alt="Generation Brasil">
+            <div class="card-body">
+                <h5 class="card-title">Generation</h5>
+                <p class="card-text">Programa intensivo para formação de jovens em Desenvolvimento Web Full Stack.</p>
+                <a href="https://brazil.generation.org/" class="btn btn-primary" target="_blank">Saiba mais!</a>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Botões -->
+        <button>Clique aqui!</button>
+        <br><br>
+        <button class="btn btn-primary btn-sm">Clique aqui!</button>
+        <br><br>
+
+        <!-- <button class="btn btn-primary btn-block">Clique aqui!</button> -->
+        <br><br>
+        <button type="submit" class="btn btn-primary btn-lg">Clique aqui!</button>
+        <br><br>
+        <a class="btn btn-primary" href="https://pt-br.facebook.com/" role="button">Facebook</a>
+        <br><br>
+
+        <!-- botões de escolha -->
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1"> Masculino
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" checked> Feminino
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3"> Outros
+            </label>
+        </div>
+        <br><br>
+        <hr>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </main>
+
+    <!-- bootstrap - javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- fim bootstrap - javascript -->
+</body>
+
+</html>
